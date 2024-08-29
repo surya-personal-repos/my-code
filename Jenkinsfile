@@ -5,7 +5,7 @@ pipeline {
         stage('Clone Repo') {
           steps {
             sh 'rm -rf my-code'
-            sh 'git https://github.com/surya-personal-repos/my-code.git'
+            sh 'git clone https://github.com/surya-personal-repos/my-code.git'
             }
         }
 
